@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/consulta.css">
     <title>consulta</title>
 </head>
 <body>
@@ -15,8 +16,18 @@
         <label for="telefone">Telefone:</label><br>
         <input type="text" id="telefone" name="telefone"><br><br>
         <label for="consulta">Consulta:</label><br>
-        <input type="text" id="consulta" name="consulta"><br><br>
+        <select id="consulta" name="consulta">
+            <option value="eletrocardiograma">Eletrocardiograma</option>
+            <option value="holter">Holter</option>
+            <option value="ecocardiograma">Ecocardiograma</option>
+            <option value="ressonância magnética">Ressonância Magnética</option>
+            <option value="tomografia computadorizada">Tomografia Computadorizada</option>
+            <option value="ultrassom">Ultrassom</option>
+        </select><br><br>
+        
         <input type="submit" value="Marcar Consulta">
+
     </form>
+    <script src = "js/consulta.js"></script>
 </body>
 </html>
